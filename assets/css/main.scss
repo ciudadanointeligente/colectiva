@@ -18,6 +18,12 @@ $red:              #FF483C;
 $blue:             #048085;
 $stone:            #01585C;
 $stone-dark:       #001D1E;
+$dark:             $stone-dark;
+$light:            white;
+$medium:           $stone;
+
+$gradient-background: linear-gradient(90.85deg, #FE3A93 11.02%, #FF483C 81.47%);
+
 
 /* Base */
 
