@@ -2,6 +2,7 @@
 html, body { height: 100%; }
 
 body {
+  background-color: $stone-dark;
   font-family: 'karmilla', sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -11,7 +12,37 @@ body {
   text-shadow: rgba(0,0,0,.01) 0 0 1px;
   margin: 0;
   padding: 0;
-  color: red;
+  color: white;
+}
+
+/* Titles */
+h1,
+h2,
+h3,
+h4,
+.hola,{
+	font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+	font-size: 6.5rem;
+  font-weight: 800;
+}
+
+h2{
+	font-size: 3.3rem;
+}
+
+h3 {
+	font-size: 2.3rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 a {
@@ -25,8 +56,8 @@ a:hover {
    text-decoration: none;
  }
 
-p {
-  color: red;
+::selection{
+  background: $pink;
 }
 
 /* Utility */

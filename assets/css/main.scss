@@ -3,24 +3,21 @@
 ---
 @charset "utf-8";
 
-@import "base";
-
 // Our variables
 $base-font-family: 'karmilla';
-$base-font-size:   16px;
+$base-font-size:   1.4rem;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.8;
 
 $spacing-unit:     30px;
 
-$text-color:       #000000;
-$pink:             #000000;
-$yellow:           #000000;
-$red:              #000000;
-$blue:             #000000;
-$stone:            #000000;
-$stone-dark:       #000000;
+$pink:             #FE3A93;
+$yellow:           #FFC224;
+$red:              #FF483C;
+$blue:             #048085;
+$stone:            #01585C;
+$stone-dark:       #001D1E;
 
 /* Base */
 
@@ -45,3 +42,5 @@ $stone-dark:       #000000;
         font-weight: bold;
         font-style: normal;
     }
+
+@import "base";
