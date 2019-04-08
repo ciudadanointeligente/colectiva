@@ -1,0 +1,32 @@
+/* base*/
+html, body { height: 100%; }
+
+body {
+  font-family: 'karmilla', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+   color: red;
+   text-decoration: none;
+ }
+
+p {
+  color: red;
+}
+
+/* Utility */
