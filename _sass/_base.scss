@@ -76,6 +76,51 @@ h4{
   letter-spacing: 2px;
 }
 
+/* Buttons */
+.uk-button{
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.uk-button-primary{
+  background: $gradient-background;
+  color: white;
+}
+
+.uk-button-default{
+  background-color: $light;
+  color: $pink;
+}
+
+/* Navbar */
+.uk-navbar{
+  background: linear-gradient(180deg, #001718 8.33%, rgba(0, 23, 24, 0) 100%);
+}
+
+li.sub-brand a{
+  color: white;
+  position: relative;
+  left: 25px;
+  top: -39px;
+}
+
+li.sub-brand a:hover{
+  color: $blue;
+}
+
+.uk-navbar-nav>li>a{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.uk-navbar-nav>li>a:hover{
+  color: $blue;
+}
+
 /* Sections */
 .uk-section-default{
   background-color: $light;
