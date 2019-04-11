@@ -31,6 +31,21 @@ a:hover{
   background: $pink;
 }
 
+.uk-text-lead{
+ font-family: 'Poppins', sans-serif;
+ font-weight: 700;
+ color: $dark;
+}
+
+.text-highlight{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  line-height: 0.6;
+}
+
 /* Titles */
 h1,
 h2,
@@ -50,7 +65,8 @@ h2{
 }
 
 h3{
-	font-size: 2.3rem;
+	font-size: 2rem;
+  line-height: 1.1;
 }
 
 h4{
