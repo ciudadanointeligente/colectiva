@@ -14,43 +14,13 @@ body {
   padding: 0;
 }
 
-/* Titles */
-h1,
-h2,
-h3,
-h4,
-.hola,{
-	font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-}
-
-h1 {
-	font-size: 6.5rem;
-  font-weight: 800;
-}
-
-h2{
-	font-size: 3.3rem;
-}
-
-h3 {
-	font-size: 2.3rem;
-}
-
-h4 {
-	font-size: 1.2rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-a {
+a{
   color: red;
   text-decoration: none;
   cursor: pointer;
 }
 
-a:hover {
+a:hover{
    color: red;
    text-decoration: none;
  }
@@ -59,7 +29,34 @@ a:hover {
   background: $pink;
 }
 
-/* Utility */
+/* Titles */
+h1,
+h2,
+h3,
+h4,{
+	font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+h1{
+	font-size: 6.5rem;
+  font-weight: 800;
+}
+
+h2{
+	font-size: 3.3rem;
+}
+
+h3{
+	font-size: 2.3rem;
+}
+
+h4{
+	font-size: 1.2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 /* Sections */
 .uk-section-default{
@@ -71,7 +68,22 @@ a:hover {
 .uk-section-primary{
   background: $gradient-background;
 }
+.uk-section-muted{
+  background-color: $dark;
+}
 
+/* Containers */
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+
+.white-container{
+  background-image: url(/assets/img/white-square.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  height: 460px;
+}
 
 /* Inverse */
 .uk-light{
@@ -88,8 +100,27 @@ a:hover {
   }
 }
 
+/* Margins & Paddings */
+.pg-top-130{
+  padding-top: 130px;
+}
+
+/* z-index */
+.over-text-top{
+  position: relative;
+  z-index: 100;
+  margin-top: -18px;
+}
+
+.over-text-left{
+  position: relative;
+  z-index: 100;
+  margin-left: -100px;
+}
+
+
 /* Gradient blend */
-.gradient-container {
+.gradient-container{
     display: inline-block;
 }
 
