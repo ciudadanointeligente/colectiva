@@ -85,8 +85,15 @@ h4{
 }
 
 .uk-button-primary{
-  background: $gradient-background;
-  color: white;
+  background: $gradient-background-red;
+  color: $light;
+  transition: background-color .1s ease-in;
+  -moz-transition: background-color .1s ease-in;
+  -webkit-transition: background-color .1s ease-in;
+}
+
+.uk-button-primary:hover{
+  background: $gradient-background-blue;
 }
 
 .uk-button-default{
@@ -154,7 +161,7 @@ li.sub-brand a:hover{
   background-color: $stone-dark;
 }
 .uk-section-primary{
-  background: $gradient-background;
+  background: $gradient-background-red;
 }
 .uk-section-muted{
   background-color: $stone-dark;
