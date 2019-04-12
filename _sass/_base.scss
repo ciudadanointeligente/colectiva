@@ -94,6 +94,24 @@ h4{
   color: $pink;
 }
 
+.scroll-circle{
+  color: white;
+  padding: 10px;
+	position: relative;
+  margin-right: 5px;
+}
+
+.scroll-circle:before{
+  content: '';
+  height: 35px;
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 30px;
+  position: absolute;
+  top: 4%;
+  left: 3%;
+}
+
 /* Navbar */
 .uk-navbar{
   background: linear-gradient(180deg, #001718 8.33%, rgba(0, 23, 24, 0) 100%);
@@ -185,6 +203,14 @@ li.sub-brand a:hover{
 /* Margins & Paddings */
 .pg-top-130{
   padding-top: 130px;
+}
+
+.mg-top-60{
+  margin-top: 60px;
+}
+
+.mg-bot-60{
+  margin-bottom: 60px;
 }
 
 /* z-index */

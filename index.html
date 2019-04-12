@@ -2,19 +2,20 @@
 layout: default
 ---
 
-<div class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="assets/img/welcome.jpg" uk-img>
+<div id="welcome" class="uk-height-viewport uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="assets/img/welcome.jpg" uk-img>
   <div class="uk-container uk-text-center uk-width-1-2@m">
     <h3>Primer encuentro latinoamericano de Fundación Ciudadanía Inteligente</h3>
     <h1>Colectiva</h1>
     <p class="text-highlight">San Luis Apizaquito de Tlaxcala</p>
     <p class="text-highlight">México</p>
     <p class="text-highlight">9, 10 y 11 de julio</p>
+    <a class="scroll-circle mg-top-60" href="#encuentro" uk-scroll uk-icon="chevron-down"></a>
   </div>
 </div>
 
 <div id="encuentro" class="uk-section uk-section-default uk-dark">
     <div class="uk-container">
-      <h3>El encuentro</h3>
+      <h3 class="mg-bot-60">El encuentro</h3>
       <div class="uk-flex uk-flex-center@m uk-flex-right@l" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .scrollspy-container; delay: 500; repeat: false">
         <div class="uk-width-3-5@m">
           <div class="scrollspy-container">
@@ -27,7 +28,7 @@ layout: default
 
 <div id="agenda" class="uk-section uk-section-secondary uk-light ff-1">
     <div class="uk-container">
-      <h3>Agenda</h3>
+      <h3 class="mg-bot-60">Agenda</h3>
       <div class="uk-child-width-expand@s uk-flex uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .scrollspy-container; delay: 500; repeat: false">
           <div class="uk-width-1-4@m">
             <div class="scrollspy-container">
@@ -68,7 +69,7 @@ layout: default
 
 <div id="sobrefci" class="uk-section uk-section-muted uk-dark white-container">
   <div class="uk-container">
-    <h3>Sobre Ciudadanía Inteligente</h3>
+    <h3 class="mg-bot-60">Sobre Ciudadanía Inteligente</h3>
     <div class="uk-child-width-expand@s uk-flex uk-flex-center@m uk-flex-right@l" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .scrollspy-container; delay: 500; repeat: false">
       <div class="uk-width-1-3@m">
         <div class="scrollspy-container">
@@ -101,13 +102,12 @@ layout: default
             </div>
           </div>
           <div class="uk-width-1-3@m">
-            <h3 class="over-text-left">Sobre Tlaxcala</h3>
+            <h3 class="over-text-left mg-bot-60">Sobre Tlaxcala</h3>
             <div class="scrollspy-container">
               <p>Tlaxcala es el estado más pequeño de México. Su nombre tiene origen náhuatl y significa lugar de pan de maíz o de tortillas. Se ubica a escasos 115 km de la ciudad de México, con un clima templado y con lluvias en verano. Sus ciudades destacan por su hermosa arquitectura neocolonial y es donde actualmente se alberga a la Secretaría Cultural del Estado de México.</p>
             </div>
           </div>
       </div>
-      <a href="" uk-totop></a>
     </div>
 </div>
 
@@ -116,5 +116,8 @@ layout: default
     <div class="uk-container uk-text-center">
       <h3>Contacto</h3>
       <button class="uk-button uk-button-default">Wena</button>
+    </div>
+    <div class="uk-container">
+      <a class="scroll-circle mg-top-60 uk-align-right@m" href="#welcome" uk-scroll uk-icon="chevron-up"></a>
     </div>
 </div>
