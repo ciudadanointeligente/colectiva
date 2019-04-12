@@ -161,6 +161,11 @@ li.sub-brand a:hover{
 }
 
 /* Fireflies */
+.ff-1-90,
+.ff-2-90{
+  background-image: none;
+}
+
 .ff-1{
   background-image: url(/assets/img/ff-1.svg);
   background-repeat: no-repeat;
@@ -364,45 +369,6 @@ footer{
   color: $pink;
 }
 
-/* Media queries */
-
-@media only screen and (max-width: 991px) {
-  html, body {
-    font-size: 0.9rem;
-  }
-
-  .menu-mobile{
-    display: block;
-  }
-
-  .menu-desktop{
-    display: none;
-  }
-
-  h1{
-  	font-size: 4.5rem;
-    font-weight: 800;
-  }
-
-  h2{
-  	font-size: 3rem;
-  }
-
-  h3{
-  	font-size: 1.5rem;
-    line-height: 1.1;
-  }
-
-  h4{
-  	font-size: 1.1rem;
-    line-height: 1.5;
-  }
-
-  .uk-text-lead{
-    font-size: 1rem;
-  }
-
-  .over-text-left{
-    margin-left: 0;
-  }
+.uk-offcanvas-close.uk-close{
+  color: $dark;
 }
