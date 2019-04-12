@@ -90,8 +90,11 @@ h4{
 }
 
 .uk-button-default{
-  background-color: $light;
-  color: $pink;
+  background-color: $light !important;
+}
+
+.uk-button-default a{
+  color: $pink !important;
 }
 
 .scroll-circle{
