@@ -1,1 +1,45 @@
+<div class="uk-position-top">
+  <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-left">
+      <ul class="uk-list">
+        <li><a class="uk-navbar-item" href="#"><img data-src="assets/img/logo.svg" alt="" uk-img></a></li>
+        <li class="sub-brand"><a href="https://ciudadaniai.org/" target="_blank">de Ciudadanía Inteligente</a></li>
+      </ul>
+    </div>
+    <div class="uk-navbar-right menu-desktop">
+        <ul class="uk-navbar-nav">
+            <li><a href="#encuentro" uk-scroll>El encuentro</a></li>
+            <li><a href="#agenda" uk-scroll>Agenda</a></li>
+            <li><a href="#sobrefci" uk-scroll>Sobre FCI</a></li>
+            <li><a href="#sobretlaxcala" uk-scroll>Sobre Tlaxcala</a></li>
+            <li>
+              <div class="uk-navbar-item">
+                <a class="uk-button uk-button-primary" href="#contacto" uk-scroll>Contacto</a>
+              </div>
+            </li>
+        </ul>
+    </div>
+    <div class="uk-navbar-right menu-mobile">
+      <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip"></a>
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true; mode: push">
+          <div class="uk-offcanvas-bar">
+              <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <ul class="uk-list">
+                  <li><a href="#encuentro" uk-scroll>El encuentro</a></li>
+                  <li><a href="#agenda" uk-scroll>Agenda</a></li>
+                  <li><a href="#sobrefci" uk-scroll>Sobre FCI</a></li>
+                  <li><a href="#sobretlaxcala" uk-scroll>Sobre Tlaxcala</a></li>
+                  <li><a href="#contacto" uk-scroll>Contacto</a></li>
+              </ul>
+          </div>
+      </div>
 
+    </div>
+  </nav>
+</div>
+
+
+<script>
+  UIkit.scrollspy(element, options);
+  UIkit.scroll(element, options).scrollTo(el);
+</script>
