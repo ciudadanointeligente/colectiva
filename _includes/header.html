@@ -6,7 +6,7 @@
         <li class="sub-brand"><a href="https://ciudadaniai.org/" target="_blank">de Ciudadanía Inteligente</a></li>
       </ul>
     </div>
-    <div class="uk-navbar-right">
+    <div class="uk-navbar-right menu-desktop">
         <ul class="uk-navbar-nav">
             <li><a href="#encuentro">El encuentro</a></li>
             <li><a href="#agenda">Agenda</a></li>
@@ -14,10 +14,26 @@
             <li><a href="#sobretlaxcala">Sobre Tlaxcala</a></li>
             <li>
               <div class="uk-navbar-item">
-                <a class="uk-button uk-button-primary">Contacto</a>
+                <a class="uk-button uk-button-primary" href="#contacto">Contacto</a>
               </div>
             </li>
         </ul>
+    </div>
+    <div class="uk-navbar-right menu-mobile">
+      <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-flip"></a>
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true; mode: push">
+          <div class="uk-offcanvas-bar">
+              <button class="uk-offcanvas-close" type="button" uk-close></button>
+              <ul class="uk-list">
+                  <li><a href="#encuentro">El encuentro</a></li>
+                  <li><a href="#agenda">Agenda</a></li>
+                  <li><a href="#sobrefci">Sobre FCI</a></li>
+                  <li><a href="#sobretlaxcala">Sobre Tlaxcala</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
+
     </div>
   </nav>
 </div>

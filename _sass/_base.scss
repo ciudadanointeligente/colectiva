@@ -121,18 +121,22 @@ li.sub-brand a:hover{
   color: $blue;
 }
 
+.menu-mobile{
+  display: none;
+}
+
 /* Sections */
 .uk-section-default{
   background-color: $light;
 }
 .uk-section-secondary{
-  background-color: $dark;
+  background-color: $stone-dark;
 }
 .uk-section-primary{
   background: $gradient-background;
 }
 .uk-section-muted{
-  background-color: $dark;
+  background-color: $stone-dark;
 }
 
 /* Fireflies */
@@ -172,9 +176,9 @@ li.sub-brand a:hover{
   }
 }
 .uk-dark{
-  color: $stone-dark;
+  color: $dark;
   h3{
-    color: $stone-dark;
+    color: $dark;
   }
 }
 
@@ -311,4 +315,65 @@ footer{
   position: absolute;
   top: 4%;
   left: 3%;
+}
+
+/* Off-canvas */
+.uk-offcanvas-bar{
+  background-color: $light;
+  color: $dark;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.uk-offcanvas-bar a{
+  color: $dark;
+}
+
+.uk-offcanvas-bar a:hover{
+  color: $pink;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 991px) {
+  html, body {
+    font-size: 0.9rem;
+  }
+
+  .menu-mobile{
+    display: block;
+  }
+
+  .menu-desktop{
+    display: none;
+  }
+
+  h1{
+  	font-size: 4.5rem;
+    font-weight: 800;
+  }
+
+  h2{
+  	font-size: 3rem;
+  }
+
+  h3{
+  	font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  h4{
+  	font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .uk-text-lead{
+    font-size: 1rem;
+  }
+
+  .over-text-left{
+    margin-left: 0;
+  }
 }
