@@ -1,0 +1,971 @@
+/* Estilos generales */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: #373737;
+}
+
+/* Font */
+
+h1,
+h2 {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    transition: 0.3s all;
+    opacity: 1 !important;
+}
+
+/* CTA */
+
+a.cta-colectiva {
+    padding: 10px 35px;
+    border-radius: 60px;
+    color: #373737;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    display: flex;
+    line-height: normal;
+}
+
+
+a.cta-colectiva:hover {
+    color: white;
+    background-color: #5160EB !important;
+}
+
+/*Colores*/
+
+.bg-gris-oscuro {
+    background-color: #373737 !important;
+}
+
+.bg-naranjo {
+    background-color: #EF734E !important;
+}
+
+.bg-morado {
+    background-color: #C28BF8 !important;
+}
+
+.bg-celeste {
+    background-color: #08DDEB !important;
+}
+
+.bg-verde {
+    background-color: #9FF87D !important;
+}
+
+.bg-amarillo {
+    background-color: #FEE203 !important;
+}
+
+.bg-azul {
+    background-color: #5160EB !important;
+}
+
+.bg-blanco {
+    background-color: white !important;
+}
+
+/* Header */
+
+/* Header */
+header {
+    padding: 0px;
+    transition: background-color 0.3s ease;
+}
+
+header.transparent-header {
+    background-color: transparent;
+}
+
+header.scrolled-header {
+    background-color: white;
+}
+
+header nav {
+    padding: 20px 0px !important;
+}
+
+header nav h1 {
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 0px;
+    letter-spacing: 0.5px;
+}
+
+@keyframes colorChangeDefault {
+    0% {
+        color: white;
+    }
+
+    25% {
+        color: #C28BF8;
+    }
+
+    50% {
+        color: #9FF87D;
+    }
+
+    75% {
+        color: #08DDEB;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@keyframes colorChangeScrolled {
+    0% {
+        color: #373737;
+    }
+
+    25% {
+        color: #C28BF8;
+    }
+
+    50% {
+        color: #9FF87D;
+    }
+
+    75% {
+        color: #08DDEB;
+    }
+
+    100% {
+        color: #373737;
+    }
+}
+
+.color-change {
+    animation: colorChangeDefault 10s infinite;
+    transition: color 4s ease-in-out;
+}
+
+header.scrolled-header .color-change {
+    animation: colorChangeScrolled 10s infinite;
+    transition: color 4s ease-in-out;
+}
+
+header ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+header a {
+    color: white;
+    /* Ajusta el color del enlace cuando el header es transparente */
+    transition: color 0.3s ease;
+}
+
+header.scrolled-header a {
+    color: #373737;
+    /* Ajusta el color del enlace cuando el header es blanco */
+}
+
+
+
+/* Estilos específicos para secciones */
+
+/* Hero */
+#hero {
+    background-color: #f0f0f0;
+    padding-left: 7%;
+    padding-top: 12px;
+}
+
+#hero .container-fluid .row .col-12 {
+    display: flex !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    width: auto !important;
+    padding: 0px;
+}
+
+
+#hero .h2-image {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#hero .h2-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#hero .h2-image img.desktop-version {
+    display: block;
+}
+
+#hero .h2-image img.mobile-version {
+    display: none;
+}
+
+#hero .h2-image span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+#hero h3 {
+    color: white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hero h3 span {
+    color: #9FF87D;
+    padding: 10px;
+}
+
+#hero h3 img {
+    width: 24px;
+    margin: 0px 10px;
+}
+
+#hero a {
+    font-size: 1.4em;
+}
+
+#hero .sello-fci {
+    padding-right: 100px;
+    width: 360px;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 80px;
+}
+
+/* Descripción Evento */
+
+#descripcion-evento {
+    position: relative;
+}
+
+#descripcion-evento .estrellas-1 {
+    position: absolute;
+    bottom: 160px;
+    left: 20px;
+    width: 140px;
+}
+
+#descripcion-evento .estrellas-2 {
+    position: absolute;
+    top: 160px;
+    right: 40px;
+    width: 140px;
+}
+
+#descripcion-evento .col-12 {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+
+#descripcion-evento p {
+    color: #373737;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#descripcion-evento h3 {
+    color: #373737;
+    margin-bottom: 30px;
+    padding: 4px 20px;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+/* frase*/
+
+#frase h3 {
+    color: white;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.2px;
+    margin-bottom: 0px;
+}
+
+
+/* tematicas */
+#tematicas {
+    position: relative;
+}
+
+#tematicas .linea-decorativa-1 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 22%;
+}
+
+
+#tematicas .linea-decorativa-2 {
+    position: absolute;
+    left: inherit;
+    bottom: 0px;
+    width: 22%;
+}
+
+#tematicas .col-12 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tematicas h2 {
+    color: #EF734E;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#tematicas .modales {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+#tematicas button {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    border: 0px;
+    padding: 5px 30px;
+    border-radius: 60px;
+    color: #373737;
+    transition: 0.3s all;
+
+}
+
+#tematicas button:hover {
+    color: white;
+    background-color: #373737 !important;
+}
+
+#tematicas .btn-gobernanza {
+    position: relative;
+    transform: rotate(2deg);
+}
+
+#tematicas .btn-democracia-ambiental {
+    left: -230px;
+    z-index: 1;
+    position: relative;
+    bottom: 4px;
+}
+
+#tematicas .btn-transformacion-digital {
+    position: relative;
+    right: -190px;
+    transform: rotate(-6deg);
+    bottom: 34px
+}
+
+#tematicas img.megafono-1-recorte {
+    position: absolute;
+    width: 130px;
+    top: -55px;
+    left: -150px;
+    z-index: 0;
+}
+
+#tematicas img.megafono-2-recorte {
+    position: absolute;
+    width: 140px;
+    top: -57px;
+    right: -140px;
+    z-index: 0;
+}
+
+#tematicas img.ojo-recorte {
+    position: absolute;
+    width: 100px;
+    top: 75px;
+    left: 150px;
+    z-index: 3;
+}
+
+#tematicas p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+
+#tematicas p a {
+    color: #EF734E;
+}
+
+#tematicas p a:hover {
+    color: #5160EB;
+}
+
+/* Modales */
+
+.modal-content {
+    border-radius: 60px;
+    border: 0px !important;
+
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+    padding-top: 0px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content img.lineas-modal {
+    position: absolute;
+    width: 60.0%;
+    bottom: 0px;
+}
+
+.modal-body {
+    padding: 50px;
+}
+
+.modal-body h1 {
+    padding-left: 40px;
+    color: #373737;
+    padding-bottom: 0px;
+    font-size: 1.5em !important;
+}
+
+.modal-body p {
+    padding-left: 40px;
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #373737;
+}
+
+.modal-content .btn-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px !important;
+    background-color: blue;
+    opacity: 1;
+    background-image: none;
+    z-index: 1;
+    font-size: 1rem !important;
+    font-family: "Ubuntu", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content .btn-close:hover {
+    background-color: #EF734E !important;
+}
+
+.modal#gobernanza-y-participacion {
+    background: rgba(8, 221, 235, 0.8);
+}
+
+.modal#democracia-ambiental {
+    background: rgba(159, 248, 125, 0.8);
+}
+
+.modal#transformacion-digital {
+    background: rgba(194, 139, 248, 0.8);
+}
+
+
+
+/* Footer */
+
+footer .bg-blanco {
+    padding: 50px 0px;
+}
+
+footer .datos-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .datos-contacto h4 {
+    color: #5160EB;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+footer .datos-contacto h4 span {
+    color: #EF734E;
+    padding: 0px 10px;
+}
+
+footer .datos-contacto h4 img {
+    width: 18px;
+    margin: 0px 5px;
+}
+
+footer .datos-contacto .rrss {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .datos-contacto .rrss a.correo {
+    color: #5160EB;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+footer .datos-contacto .rrss a.correo:hover {
+    color: #EF734E;
+}
+
+footer .datos-contacto .rrss .estrella-decoracion {
+    width: 18px;
+    margin: 0px 10px;
+}
+
+footer .datos-contacto .rrss p {
+    color: #5160EB;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+footer .datos-contacto .rrss ul {
+    list-style: none;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+footer .datos-contacto .rrss ul li {
+    margin-right: 10px;
+}
+
+footer .datos-contacto .rrss ul li a {
+    font-size: 1.5em;
+    opacity: 1;
+    color: #5462EB;
+}
+
+footer .datos-contacto .rrss ul li a:hover {
+    color: #EF734E;
+}
+
+footer .fci {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .fci p {
+    color: #5462EB;
+    margin-bottom: 0px;
+    margin-right: 15px;
+}
+
+footer .fci img.sello-fci {
+    width: 250px;
+}
+
+footer .derechos {
+    padding: 10px 0px;
+}
+
+
+footer .derechos p {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+
+/*Adaptación a otros dispositivos*/
+
+
+@media (max-width: 900px) {
+    #hero h3 {
+        font-size: 1.5em;
+    }
+
+    #hero h3 span {
+        padding: 0px 0px 0px 20px !important;
+    }
+}
+
+@media (max-width:768px) {
+
+    .container-fluid {
+        padding: 20px;
+    }
+
+    #hero .container-fluid .col-12 {
+        padding: 20px !important;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    header nav {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    header nav h1 {
+        font-size: 1.2em;
+    }
+
+    #hero {
+        padding-left: 0px;
+    }
+
+    #hero .h2-image img.desktop-version {
+        display: none;
+    }
+
+    #hero .h2-image img.mobile-version {
+        display: block;
+        padding-left: 0px;
+    }
+
+
+    #hero h3 {
+        font-size: 1.3em;
+        flex-wrap: wrap !important;
+        padding-bottom: 0px;
+        margin-bottom: 30px;
+        justify-content: flex-start;
+
+    }
+
+    #hero h3 span {
+        padding: 0px 0px 0px 10px !important;
+        margin: 0px !important;
+    }
+
+    #hero a {
+        font-size: 1em;
+    }
+
+    a.cta-colectiva {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+
+    #hero .sello-fci {
+        padding-right: 0px;
+        width: 170px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: 20px;
+        right: 0px;
+    }
+
+    #descripcion-evento p {
+        font-size: 1.1em;
+        z-index: 1;
+    }
+
+
+    #descripcion-evento h3 {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 0px;
+        z-index: 1;
+        font-weight: 800;
+        background-color: transparent !important;
+    }
+
+    #frase h3 {
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+
+    #tematicas .linea-decorativa-1 {
+        width: 40%;
+    }
+
+    #tematicas .linea-decorativa-2 {
+        width: 40%;
+    }
+
+    #tematicas .btn-gobernanza {
+        position: relative;
+        transform: rotate(2deg);
+        bottom: 2;
+    }
+
+    #tematicas .btn-democracia-ambiental {
+        left: 0px;
+        z-index: 1;
+        position: relative;
+        bottom: 0px;
+    }
+
+    #tematicas .btn-transformacion-digital {
+        position: relative;
+        right: -0px;
+        transform: rotate(-3deg);
+        bottom: 0px
+    }
+
+    #tematicas button {
+        font-size: 0.9em;
+        padding: 5px 10px;
+        z-index: 1;
+    }
+
+    #tematicas p {
+        z-index: 1;
+        font-size: 1em;
+        padding-bottom: 60px;
+    }
+
+    #descripcion-evento .estrellas-1 {
+        width: 100px;
+    }
+
+    #descripcion-evento .estrellas-2 {
+        width: 100px;
+    }
+
+    #tematicas img.megafono-1-recorte {
+        position: absolute;
+        width: 110px;
+        top: -86px;
+        left: 0px;
+        z-index: 0;
+    }
+
+    #tematicas img.megafono-2-recorte {
+        position: absolute;
+        width: 110px;
+        top: -80px;
+        right: 0px;
+        z-index: 0;
+    }
+
+    #tematicas img.ojo-recorte {
+        position: absolute;
+        width: 70px;
+        bottom: -20px !important;
+        top: auto;
+        right: 0px;
+        left: auto;
+        z-index: 3;
+    }
+
+    footer .datos-contacto h4 {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+    }
+
+    footer .datos-contacto h4 span {
+        padding: 0px;
+    }
+
+    footer .datos-contacto .rrss .estrella-decoracion {
+        display: none;
+    }
+
+    footer .datos-contacto .rrss {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    footer .datos-contacto p {
+        font-size: 1em;
+    }
+
+    footer .fci img.sello-fci {
+        width: 180px;
+    }
+
+    footer .fci {
+        justify-content: flex-start;
+    }
+
+    footer .datos-contacto .rrss ul {
+        padding-left: 0px;
+    }
+
+    footer .datos-contacto .rrss ul li a {
+        font-size: 2em;
+    }
+
+    footer .datos-contacto .rrss a.correo {
+        margin-bottom: 20px;
+    }
+
+    footer .derechos p {
+        font-size: 0.9em;
+    }
+
+    #hero h3 img {
+        width: 18px;
+        margin: 0px 5px;
+    }
+
+    .modal-body h1 {
+        padding-left: 30px;
+        font-size: 1.3em !important;
+    }
+
+    .modal-body p {
+        padding-left: 30px;
+        padding-bottom: 10px !important;
+        margin-bottom: 20px !important;
+        font-size: 1em;
+    }
+
+}
+
+
+@media(max-width:480px) {
+    #hero h3 span {
+        padding: 0px 0px 0px 0px !important;
+    }
+
+}
+
+@media (max-width:370px) {
+    #tematicas button {
+        font-size: 0.7em;
+        padding: 5px 8px;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width:330px) {
+
+
+    header nav h1 {
+        font-size: 1em;
+    }
+
+    a.cta-colectiva {
+        font-size: 0.8em;
+    }
+
+    #hero a {
+        font-size: 0.8em;
+    }
+
+    #descripcion-evento p {
+        font-size: 0.9em;
+    }
+
+    #frase h3 {
+        font-size: 1em;
+        letter-spacing: 0px;
+    }
+
+    #tematicas h2 {
+        font-size: 1.3em;
+    }
+
+    #tematicas button {
+        font-size: 0.65em;
+        padding: 5px 6px;
+        z-index: 1;
+    }
+
+    #tematicas img.megafono-1-recorte {
+        position: absolute;
+        width: 70px;
+        top: -55px;
+    }
+
+    #tematicas img.megafono-2-recorte {
+        position: absolute;
+        width: 70px;
+        top: -50px;
+    }
+
+    #tematicas img.ojo-recorte {
+        position: absolute;
+        width: 40px;
+        bottom: -10px !important;
+    }
+
+
+}
